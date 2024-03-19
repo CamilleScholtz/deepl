@@ -5,7 +5,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/bounoable/deepl"
+	"github.com/camillescholtz/deepl"
 	"github.com/stretchr/testify/assert"
 )
 

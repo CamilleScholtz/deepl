@@ -11,12 +11,12 @@ import (
 	"net/url"
 	"strings"
 
-	httpi "github.com/bounoable/deepl/http"
+	httpi "github.com/camillescholtz/deepl/http"
 )
 
 const (
 	// V2 is the base url for v2 of the deepl API.
-	V2 = "https://api.deepl.com/v2"
+	V2 = "https://api-free.deepl.com/v2"
 )
 
 // A Client is a deepl client.
@@ -104,6 +104,12 @@ func TagHandling(handling TagHandlingStrategy) TranslateOption {
 func IgnoreTags(tags ...string) TranslateOption {
 	return func(vals url.Values) {
 		vals.Set("ignore_tags", strings.Join(tags, ","))
+	}
+}
+
+func translationContext(sentences []string) TranslateOption {
+	return func(vals url.Values) {
+		vals.Set("context", strings.Join(sentences, " "))
 	}
 }
 

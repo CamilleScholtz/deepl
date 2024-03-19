@@ -1,13 +1,13 @@
 # DeepL Pro API client
 
-[![PkgGoDev](https://pkg.go.dev/badge/github.com/bounoable/deepl)](https://pkg.go.dev/github.com/bounoable/deepl)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/camillescholtz/deepl)](https://pkg.go.dev/github.com/camillescholtz/deepl)
 
 Client library for the [**DeepL Pro API**](https://deepl.com).
 
 ## Installation
 
 ```sh
-go get github.com/bounoable/deepl
+go get github.com/camillescholtz/deepl
 ```
 
 ## Usage
@@ -16,7 +16,7 @@ See the [examples](./example_test.go).
 
 ```go
 import (
-  "github.com/bounoable/deepl"
+  "github.com/camillescholtz/deepl"
 )
 
 client := deepl.New("your-auth-key")

@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/bounoable/deepl"
-	mock_http "github.com/bounoable/deepl/http/mocks"
+	"github.com/camillescholtz/deepl"
+	mock_http "github.com/camillescholtz/deepl/http/mocks"
 	"github.com/golang/mock/gomock"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

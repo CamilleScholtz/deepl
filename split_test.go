@@ -3,7 +3,7 @@ package deepl_test
 import (
 	"testing"
 
-	"github.com/bounoable/deepl"
+	"github.com/camillescholtz/deepl"
 	"github.com/stretchr/testify/assert"
 )
 

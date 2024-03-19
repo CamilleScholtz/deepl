@@ -3,7 +3,7 @@ package deepl_test
 import (
 	"testing"
 
-	"github.com/bounoable/deepl"
+	"github.com/camillescholtz/deepl"
 )
 
 func TestTagHandlingStrategy_Value_String(t *testing.T) {
