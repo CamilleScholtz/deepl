@@ -107,7 +107,7 @@ func IgnoreTags(tags ...string) TranslateOption {
 	}
 }
 
-func translationContext(sentences []string) TranslateOption {
+func TranslationContext(sentences []string) TranslateOption {
 	return func(vals url.Values) {
 		vals.Set("context", strings.Join(sentences, " "))
 	}
